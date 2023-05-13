@@ -23,8 +23,6 @@ set encoding=utf-8
 
 set clipboard+=unnamed
 
-hi Normal ctermfg=252 ctermbg=none
-
 
 " ===
 " === Main code display
