@@ -23,6 +23,8 @@ set encoding=utf-8
 
 set clipboard+=unnamed
 
+hi Normal ctermfg=252 ctermbg=none
+
 
 " ===
 " === Main code display
@@ -141,7 +143,7 @@ call plug#begin()
 call plug#end()
 
 
-:source ~/.vim/markdown.vim
+:source ~/Desktop/vim-yrxns/markdown.vim
 
 "COC
 inoremap <silent><expr> <TAB>
