@@ -25,6 +25,13 @@ set clipboard+=unnamed
 
 
 " ===
+" === balckgroundcolor
+" ===
+hi Normal ctermfg=252 ctermbg=none
+
+
+
+" ===
 " === Main code display
 " ===
 set number
