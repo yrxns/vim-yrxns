@@ -86,6 +86,7 @@ set incsearch
 set ignorecase
 set smartcase
 set showmatch
+exec "nohlsearch"
 
 
 " ===
