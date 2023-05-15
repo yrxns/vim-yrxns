@@ -25,13 +25,6 @@ set clipboard+=unnamed
 
 
 " ===
-" === balckgroundcolor
-" ===
-hi Normal ctermfg=252 ctermbg=none
-
-
-
-" ===
 " === Main code display
 " ===
 set number
@@ -188,3 +181,4 @@ if (empty($TMUX))
 endif
 
 let g:gruvbox_contrast_dark='hard'
+let g:gruvbox_transparent_bg=1
