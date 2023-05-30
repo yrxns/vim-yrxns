@@ -159,6 +159,8 @@ endfunction
 
 "vim-clang-format
 " clang-format -style=llvm -dump-config > .clang-format
+" let g:clang_format#code_style = google
+" let g:clang_format#command = "/home/yrxns/Desktop/vim-yrxns/.clang-format"
 let g:clang_format#detect_style_file = 1
 " let g:clang_format#auto_format_on_insert_leave = 1
 nnoremap clang :ClangFormat<CR>
