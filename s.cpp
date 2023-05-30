@@ -1,14 +1,14 @@
 #include <iostream>
 
 int main() {
-  int s = 3;
-  int assssss = 4;
-  int ss = 5;
-  float d = 1;
+  int   s       = 3;
+  int   assssss = 4;
+  int   ss      = 5;
+  float d       = 1;
   std::cout << "..." << std::endl;
 
-  int aaaaaaaaaaaaa;
-  int aa;
+  int    aaaaaaaaaaaaa;
+  int    aa;
   double c;
 
   struct test demo[] = {
@@ -57,7 +57,7 @@ int main() {
   class Foo : Base1, Base2 {};
 
   vector<int> x{1, 2, 3, 4};
-  vector<T> x{{}, {}, {}, {}};
+  vector<T>   x{{}, {}, {}, {}};
   f(MyMap[{composite, key}]);
   new int[3]{1, 2, 3};
 
@@ -68,7 +68,7 @@ int main() {
 
   int* a;
 
-  int const a;
+  int const  a;
   int const* a;
 
   const int a;
