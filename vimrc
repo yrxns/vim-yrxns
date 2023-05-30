@@ -131,9 +131,10 @@ nnoremap shell :!
 
 
 call plug#begin()
+    Plug 'neoclide/coc.nvim', {'branch': 'release'}
+    Plug 'rhysd/vim-clang-format'
     Plug 'dhruvasagar/vim-table-mode'
     Plug 'jiangmiao/auto-pairs'
-    Plug 'neoclide/coc.nvim', {'branch': 'release'}
     Plug 'itchyny/lightline.vim'
     Plug 'preservim/nerdtree'
     Plug 'tpope/vim-commentary'
@@ -142,6 +143,7 @@ call plug#end()
 
 
 :source ~/Desktop/vim-yrxns/markdown.vim
+
 
 "COC
 inoremap <silent><expr> <TAB>
@@ -154,6 +156,13 @@ function! CheckBackspace() abort
   let col = col('.') - 1
   return !col || getline('.')[col - 1]  =~# '\s'
 endfunction
+
+"vim-clang-format
+" clang-format -style=llvm -dump-config > .clang-format
+let g:clang_format#detect_style_file = 1
+" let g:clang_format#auto_format_on_insert_leave = 1
+nnoremap clang :ClangFormat<CR>
+
 
 "nerdtree
 nnoremap <leader>n :NERDTree<CR>
